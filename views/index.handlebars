@@ -1,0 +1,91 @@
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Eat Da Burger!</h1>
+
+    <div class="col-md-12 text-center">
+      <img class="myBurger" src="burger.png" alt="cartoon burger" ;>
+    </div>
+
+  </div>
+</div>
+
+{{!-- <div class="card w-75">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <a href="#" class="btn btn-primary">Button</a>
+  </div>
+</div> --}}
+
+
+
+
+
+
+<div class="container myContainer">
+  <div class="row">
+    <div class="col-sm-6 col-md-6 col-lg-6">
+      <h5 class="eat">Uneaten Burgers</h2>
+
+    <div class="card w-90">
+        {{!-- <div class="card-body">  --}}
+      {{!-- <h5 class="card-title">Uneaten Burgers</h5> --}}
+
+      <ol class="list-group list-group-flush">
+        {{#each burgers}}
+        {{#unless devoured}}
+        {{> burgers/burgers-block devoured=0}}
+        {{/unless}}
+        {{/each}}
+      </ol>
+
+    </div>
+      </div> 
+
+
+
+
+
+      <div class="col-sm-6 col-md-6 col-lg-6">
+
+        <h5 class="eat">Devoured Burgers</h2>
+          <div style="width: 9rem;"></div>
+
+          <ul class="list-group list-group-flush">
+            {{#each burgers}}
+            {{#if devoured}}
+            {{> burgers/burgers-block devoured=1}}
+            {{/if}}
+            {{/each}}
+          </ul>
+
+
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<h2 class="AddBurger">Add a Burger</h2>
+<form class="create-form">
+
+  <div class="form-group">
+    <label for="burg">Burger Name:</label>
+    <input type="text" id="burg" name="burger_name">
+  </div>
+
+
+
+  {{!-- <button type="submit">Add Burger</button> --}}
+
+
+  <div class="col-md-12 text-center">
+    <button type="submit" class="btn btn-danger">Add Burger!</button>
+  </div>
+</form>

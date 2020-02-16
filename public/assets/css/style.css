@@ -1,0 +1,65 @@
+/* li {
+  padding: 5px;
+  margin: 5px;
+  background: #faebd7;
+} */
+body{
+  background-color: #ffca7a;
+}
+
+.jumbotron {
+  background-color: #ffca7a !important;
+  padding: 10px !important;
+
+}
+h1 {
+ text-align: center;
+}
+h5 {
+  text-align: center;
+}
+
+.eat{
+  border-bottom: 2px solid black;
+  padding: 5px;
+
+}
+/* .already_eaten {
+  text-align: right;
+} */
+.AddBurger {
+  text-align: center;
+}
+.myBurger {
+  text-align: center;
+  width: 20%;
+}
+.centeredList {
+  text-align: center;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.mainButton {
+  text-align: center;
+}
+
+.create-update-form {
+  padding: 5px;
+  margin: 5px;
+  background: aqua;
+}
+
+.form-group {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.myContainer {
+  padding: 25px;
+  /* border-style: solid;
+  border-width: 5px; 
+  border-color: black; */
+}

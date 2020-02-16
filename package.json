@@ -1,0 +1,28 @@
+{
+  "name": "burger-project",
+  "version": "1.0.0",
+  "description": "Create a virtual burger, then devour it!",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tonnette/burger-project.git"
+  },
+  "keywords": [
+    "Burger"
+  ],
+  "author": "Tonnette Stanford",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tonnette/burger-project/issues"
+  },
+  "homepage": "https://github.com/Tonnette/burger-project#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "mysql": "^2.18.1"
+  }
+}
