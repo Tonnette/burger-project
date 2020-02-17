@@ -4,9 +4,10 @@
 
 
 		{{#if devoured}}
+		<button class="delete-burger btn btn-outline-warning btn-sm" data-id="{{this.id}}">Delete burger</button>
 		
 		{{else}}
-		<button type="button" class="change-devoured btn btn-outline-warning btn-block" data-id="{{id}}" data-newsleep="{{devoured}}">
+		<button type="button" class="change-devoured btn btn-outline-primary btn-block" data-id="{{id}}" data-newsleep="{{devoured}}">
 			DEVOUR ME!</button>
 			
 			
